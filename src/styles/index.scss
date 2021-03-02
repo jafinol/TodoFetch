@@ -1,5 +1,51 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+.todoListMain {
+  color: #333;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  list-style: none;
+  width: 450px;
+ text-align: center;
+ //border: 1px solid  black;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.todoListMain2 {
+  color: #333;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  list-style: none;
+  width: 450px;
+ text-align: center;
+ //border: 1px solid  black;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.todoListFoo {
+  color: #333;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  list-style: none;
+  width: 450px;
+ //border: 1px solid  black;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+input {
+        background-color: #eee;
+    border: 0;
+
+}
+
 /* 
 
     You can write your own styles here...
