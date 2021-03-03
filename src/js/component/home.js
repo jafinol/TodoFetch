@@ -20,7 +20,7 @@ export function Home() {
 
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/jafinolc", {
 			method: "PUT",
-			body: JSON.stringify(variale),
+			body: JSON.stringify([todoList]),
 			headers: {
 				"Content-Type": "application/json"
 			}
@@ -37,7 +37,7 @@ export function Home() {
 			})
 			.catch(error => {
 				//error handling
-				//	console.log(error);
+				//console.log(error);
 			});
 
 		//	getTodos();
