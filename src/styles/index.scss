@@ -2,7 +2,7 @@
 
 .todoListMain {
   color: #333;
-  background-color: #eee;
+  background-color: #D8D8D8;
   padding: 10px;
   margin-bottom: 4px;
   border-radius: 5px;
@@ -15,7 +15,7 @@
 }
 .todoListMain2 {
   color: #333;
-  background-color: #eee;
+  background-color: #D8D8D8;
   padding: 10px;
   margin-bottom: 4px;
   border-radius: 5px;
@@ -27,9 +27,10 @@
 
 }
 
+
 .todoListFoo {
   color: #333;
-  background-color: #eee;
+  background-color: #D8D8D8;
   padding: 10px;
   margin-bottom: 4px;
   border-radius: 5px;
@@ -37,12 +38,15 @@
   width: 450px;
  //border: 1px solid  black;
  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ font-size: 0.5rem;
+ font-weight:  bolder;
 
 }
 
 input {
-        background-color: #eee;
+        background-color: #fff;
     border: 0;
+
 
 }
 

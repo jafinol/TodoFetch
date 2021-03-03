@@ -93,10 +93,10 @@ export function Home() {
 					className="todoListMain container row"
 					style={{ with: "30%", margin: "auto" }}
 					onClick={() => deleteElem(todoList, index)}>
-					<div className="d-flex justify-content-start col">
+					<div className="d-flex justify-content-start col-md-11">
 						{item.label}
 					</div>
-					<div className="d-flex justify-content-end col">
+					<div className="d-flex justify-content-end col-md-1">
 						<i
 							style={{ visibility: "hidden" }}
 							className="fas fa-trash-alt"
