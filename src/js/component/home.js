@@ -11,16 +11,10 @@ export function Home() {
 		setTodo(e.target.value);
 	};
 
-	const handleAdd = () => {
-		var variale = {
-			label: todo,
-			done: false
-		};
-		setTodoList([...todoList, variale]);
-
+	function putTodos(arr) {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/jafinolc", {
 			method: "PUT",
-			body: JSON.stringify([todoList]),
+			body: JSON.stringify(arr),
 			headers: {
 				"Content-Type": "application/json"
 			}
@@ -39,9 +33,17 @@ export function Home() {
 				//error handling
 				//console.log(error);
 			});
+	}
 
-		//	getTodos();
+	const handleAdd = () => {
+		var variale = {
+			label: todo,
+			done: false
+		};
+		setTodoList([...todoList, variale]);
 		setTodo("");
+
+		putTodos([...todoList, variale]);
 	};
 
 	function deleteElem(arr, itemdel) {
@@ -49,6 +51,21 @@ export function Home() {
 			return index3 != itemdel;
 		});
 		setTodoList(result);
+		putTodos(result);
+		/*
+		fetch("https://assets.breatheco.de/apis/fake/todos/user/jafinolc", {
+			method: "PUT",
+			body: JSON.stringify(result),
+			headers: {
+				"Content-Type": "application/json"
+			}
+		})
+			.then(resp => {
+				return resp.json();
+			})
+			.then(data => {})
+            .catch(error => {});
+            */
 	}
 
 	const getTodos = () => {
